@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,12 +23,6 @@
         strong {
             color: #000;
         }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-        }
         .container {
             background-color: #fff;
             padding: 25px;
@@ -50,26 +43,12 @@
             <li><strong>No User Accounts:</strong> The application does not require you to sign up, log in, or provide any personal information to use its features.</li>
             <li><strong>Local Processing:</strong> All QR code generation is performed <strong>exclusively on your device</strong>. The information you enter (whether it's text, a website URL, Wi-Fi credentials, contact details, or any other supported type) is never sent to our servers or any third-party service.</li>
             <li><strong>No Analytics or Tracking:</strong> The app does not collect any analytics, diagnostics, or usage data. We do not track how you use the app.</li>
-            <li><strong>No Third-Party Services:</strong> QR Code Studio Pro does not integrate with any third-party services, SDKs, or APIs for analytics, advertising, or crash reporting. The app is entirely self-contained.</li>
+            <li><strong>No Permissions Required:</strong> The application does not require any special permissions on Windows to run. It functions as a self-contained tool.</li>
+            <li><strong>No Third-Party Services:</strong> QR Code Studio Pro does not integrate with any third-party services, SDKs, or APIs for analytics, advertising, or crash reporting.</li>
         </ul>
-
-        <h2>Permissions We Request on macOS</h2>
-        <p>To function, QR Code Studio Pro requires a very limited and specific permission from macOS. We believe in transparency, so we want to explain exactly why this is needed.</p>
-
-        <h3>File System Access (<code>com.apple.security.files.user-selected.read-write</code>)</h3>
-        <p>
-            This permission is required for the "Download QR Code" feature. Here is what it allows the app to do:
-        </p>
-        <ul>
-            <li>When you click the download button, this permission allows the app to open a standard macOS "Save" dialog box.</li>
-            <li>It gives the app permission to write the generated QR code (as a PNG file) <strong>only to the specific folder and file name that you explicitly choose</strong> in that dialog box.</li>
-        </ul>
-        <p>
-            <strong>Crucially, this permission does not grant QR Code Studio Pro the ability to read or write any other files on your computer.</strong> The app has no access to your personal documents or any data outside of the file it is saving at your direct request.
-        </p>
 
         <h2>Data You Create</h2>
-        <p>The QR code files you generate and save are your own. They are stored locally on your device in the location you select. We have no access to these files.</p>
+        <p>The QR code files you generate and save are your own. When you choose to save a QR code, the application uses the standard Windows "Save As" dialog. The files are stored locally on your device only in the location you select. We have no access to these files or any other data on your computer.</p>
         
         <h2>Children's Privacy</h2>
         <p><strong>Techflyer</strong> does not knowingly collect any personally identifiable information from children under the age of 13. This application is designed for a general audience and does not contain any content unsuitable for children.</p>
