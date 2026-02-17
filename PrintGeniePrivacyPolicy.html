@@ -83,28 +83,6 @@
             margin-bottom: 40px;
         }
 
-        .placeholder {
-            background-color: #eef7ff;
-            color: #333;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-            font-weight: bold;
-        }
-        
-        .contact-info .placeholder {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            font-weight: normal;
-        }
-
-        .note {
-            background-color: #eef7ff;
-            border-left: 4px solid #007bff;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
         /* --- Footer/Contact Section --- */
         .contact-info {
             margin-top: 50px;
@@ -118,7 +96,7 @@
     <div class="container">
         <header>
             <h1>Privacy Policy for Printer Genie</h1>
-            <p class="last-updated">Last Updated: February 17, 2026</p>
+            <p class="last-updated">Last Updated: October 26, 2023</p>
         </header>
 
         <section>
@@ -137,165 +115,97 @@
             <p>Printer Genie is designed with a privacy-first, local-processing approach.</p>
             
             <h3>3.1 Information Processed Locally</h3>
-            <p>The following information is processed locally on your device:</p>
+            <p>The following information is processed locally on your device and is not transmitted to our servers:</p>
             <ul>
                 <li>Printer discovery and device details</li>
-                <li>Hardware and system information</li>
+                <li><strong>Hardware and system information:</strong> This includes your operating system version and architecture (e.g., Windows 11 64-bit), used locally to help find compatible drivers.</li>
                 <li>Print queue data</li>
                 <li>PDF files selected for printing</li>
                 <li>Application preferences and settings</li>
-                <li>Diagnostic operations</li>
+                <li><strong>Diagnostic operations:</strong> The application may run checks on your system's printer configuration and present a summary of the results directly to you within the app. This information is for your use only and is not sent to us.</li>
             </ul>
-            <p>This information does not leave your computer unless explicitly stated below.</p>
 
             <h3>3.2 Stepper Questionnaire Data</h3>
-            <p>Printer Genie includes a guided stepper interface where users manually select:</p>
-            <ul>
-                <li>Printer brand</li>
-                <li>Region</li>
-                <li>Printer model</li>
-                <li>Operating system (auto-detected but user selectable)</li>
-            </ul>
-            <div class="note">
-                <p><strong>Important:</strong></p>
-                <ul>
-                    <li>Questionnaire selections are not stored permanently by us.</li>
-                    <li>Responses are not transmitted for tracking or profiling.</li>
-                    <li>Responses are used solely to request driver URLs.</li>
-                </ul>
-            </div>
+            <p>Printer Genie includes a guided stepper interface where users manually select their printer brand, model, and other details. This information is used solely to request the correct driver URLs from our server and is not stored or used for profiling.</p>
 
             <h3>3.3 API Communication</h3>
-            <p>Printer Genie communicates with an API only for functional purposes:</p>
-            <p><strong>a) Driver URL Retrieval</strong></p>
-            <p>Selected questionnaire options may be sent to retrieve:</p>
-            <ul>
-                <li>Relevant manufacturer driver links</li>
-                <li>Compatibility results</li>
-            </ul>
-            <p><strong>b) Auto-Detected Printer Lookup</strong></p>
-            <p>If printer auto-detection is enabled:</p>
-            <ul>
-                <li>Printer model</li>
-                <li>Basic device identifiers</li>
-            </ul>
-            <p>may be sent to check for known driver availability.</p>
+            <p>Printer Genie communicates with our API for essential functions. When it does, we send the minimum information necessary:</p>
+            <p><strong>a) Driver URL Retrieval:</strong> The questionnaire selections (brand, model, etc.) are sent to our API to retrieve relevant manufacturer driver links.</p>
+            <p><strong>b) Auto-Detected Printer Lookup:</strong> If you enable this feature, we send only the non-unique manufacturer and model name provided by your device (e.g., "HP LaserJet Pro M404n") to check for driver availability. No unique hardware IDs, serial numbers, or network identifiers are transmitted.</p>
+
         </section>
 
         <section>
             <h2>4. What We Do NOT Collect</h2>
-            <p>Printer Genie does not collect or store:</p>
+            <p>Printer Genie is explicitly designed not to collect or store:</p>
             <ul>
-                <li>Personal identity information</li>
-                <li>Names, emails, phone numbers</li>
-                <li>Documents or PDF contents</li>
-                <li>Browsing activity</li>
-                <li>Questionnaire history</li>
-                <li>Persistent usage tracking data</li>
+                <li>Personal identity information (names, emails, phone numbers)</li>
+                <li>The contents of your documents or PDF files</li>
+                <li>Your browsing activity or history</li>
+                <li>Persistent usage tracking data or profiles of your activity</li>
             </ul>
-            <p>We do not build user profiles.</p>
         </section>
 
         <section>
             <h2>5. Third-Party Manufacturer Websites</h2>
-            <p>Printer Genie may open official manufacturer websites inside an in-app dialog/browser.</p>
-            <p>We:</p>
-            <ul>
-                <li>Do not control those websites</li>
-                <li>Do not collect data from those sessions</li>
-                <li>Are not responsible for their privacy practices</li>
-            </ul>
-            <p>Users should review the manufacturer’s privacy policy when visiting external sites.</p>
+            <p>Printer Genie may open official manufacturer websites inside an in-app dialog. We do not control these third-party websites, do not collect data from those sessions, and are not responsible for their privacy practices. Users should review the manufacturer’s privacy policy.</p>
         </section>
 
         <section>
             <h2>6. How Information Is Used</h2>
             <p>Information handled by Printer Genie is used exclusively for:</p>
             <ul>
-                <li>Printer detection</li>
-                <li>Driver link matching</li>
-                <li>Compatibility checks</li>
-                <li>Printing functionality</li>
-                <li>Diagnostics</li>
-                <li>Application stability</li>
+                <li>Printer detection and driver link matching</li>
+                <li>Core printing functionality and compatibility checks</li>
+                <li>Presenting diagnostic summaries to you within the app</li>
+                <li>Facilitating communication with our API for application functionality</li>
             </ul>
-            <p>No data is used for advertising or resale.</p>
+            <p>No data is used for advertising, marketing, or resale.</p>
         </section>
 
         <section>
             <h2>7. Data Storage</h2>
-            <ul>
-                <li>All operational data is stored locally on your device.</li>
-                <li>We do not maintain cloud databases of user activity.</li>
-                <li>No remote storage of documents or printer usage.</li>
-            </ul>
+            <p>All operational data related to your files and printers is stored locally on your device. We do not maintain remote databases of user activity or print history.</p>
         </section>
 
         <section>
             <h2>8. Data Security</h2>
-            <p>Printer Genie relies on:</p>
-            <ul>
-                <li>Windows security mechanisms</li>
-                <li>Local system protections</li>
-            </ul>
-            <p>While reasonable safeguards are applied, no system is completely secure.</p>
+            <p>Printer Genie relies on the security mechanisms built into the Windows operating system. While reasonable safeguards are applied to our API, no system is completely secure.</p>
         </section>
 
         <section>
             <h2>9. Data Retention</h2>
-            <p>Because data is processed locally:</p>
-            <ul>
-                <li>Data remains until deleted by the user.</li>
-                <li>Uninstalling the Application removes associated local data.</li>
-                <li>We do not retain remote copies.</li>
-            </ul>
+            <p>Because most data is processed locally, it remains on your device until you delete it. Uninstalling the Application removes its associated local data. Any temporary data related to API requests is not retained by us.</p>
         </section>
 
         <section>
             <h2>10. Data Sharing</h2>
-            <p>We do not sell, rent, or trade data.</p>
-            <p>Information may only be disclosed if required by:</p>
-            <ul>
-                <li>Applicable law</li>
-                <li>Legal obligations</li>
-            </ul>
+            <p>We do not sell, rent, or trade your data with third parties. Information may only be disclosed if required by applicable law or a binding legal obligation.</p>
         </section>
 
         <section>
             <h2>11. User Control</h2>
-            <p>Users may:</p>
-            <ul>
-                <li>Enable/disable printer auto-detection</li>
-                <li>Choose questionnaire selections manually</li>
-                <li>Decline optional features</li>
-            </ul>
+            <p>Users may enable or disable printer auto-detection, manually select all printer details, and decline to use any optional features.</p>
         </section>
 
         <section>
             <h2>12. Children’s Privacy</h2>
-            <p>Printer Genie is not directed at children under 13. We do not knowingly collect data from children.</p>
+            <p>Printer Genie is not directed at children under 13. We do not knowingly collect personal data from children.</p>
         </section>
 
         <section>
             <h2>13. International Use</h2>
-            <p>Printer Genie may be used globally. Any API communication may involve servers located in different jurisdictions.</p>
-            <p>By using the Application, you consent to such transfers where necessary for functionality.</p>
+            <p>By using the Application, you acknowledge and consent that any data transmitted during API communication may be transferred to and processed on servers that may be located outside of your home country.</p>
         </section>
 
         <section>
             <h2>14. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy periodically.</p>
-            <p>Updates may occur due to:</p>
-            <ul>
-                <li>Feature changes</li>
-                <li>Legal requirements</li>
-            </ul>
-            <p>Continued use of Printer Genie constitutes acceptance of the updated policy.</p>
+            <p>We may update this Privacy Policy periodically. Your continued use of Printer Genie after an update constitutes acceptance of the new policy.</p>
         </section>
 
         <section class="contact-info">
             <h2>15. Contact Information</h2>
-            <p>For privacy inquiries:</p>
+            <p>For privacy inquiries, please contact us:</p>
             <p>
                 <strong>Email:</strong> <a href="mailto:techflyerstore@gmail.com">techflyerstore@gmail.com</a><br>
                 <strong>Company:</strong> TechFlyer
