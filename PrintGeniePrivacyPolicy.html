@@ -83,6 +83,14 @@
             margin-bottom: 40px;
         }
 
+        .note {
+            background-color: #eef7ff;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
         /* --- Footer/Contact Section --- */
         .contact-info {
             margin-top: 50px;
@@ -96,7 +104,7 @@
     <div class="container">
         <header>
             <h1>Privacy Policy for Printer Genie</h1>
-            <p class="last-updated">Last Updated: February 17, 2026</p>
+            <p class="last-updated">Last Updated: March 5, 2026</p>
         </header>
 
         <section>
@@ -126,13 +134,16 @@
             </ul>
 
             <h3>3.2 Stepper Questionnaire Data</h3>
-            <p>Printer Genie includes a guided stepper interface where users manually select their printer brand, model, and other details. This information is used solely to request the correct driver URLs from our server and is not stored or used for profiling.</p>
+            <p>Printer Genie includes a guided stepper interface where users manually select their printer brand, model, and other details. This information is used solely as input parameters to generate a targeted search query for our backend service.</p>
 
-            <h3>3.3 API Communication</h3>
-            <p>Printer Genie communicates with our API for essential functions. When it does, we send the minimum information necessary:</p>
-            <p><strong>a) Driver URL Retrieval:</strong> The questionnaire selections (brand, model, etc.) are sent to our API to retrieve relevant manufacturer driver links.</p>
-            <p><strong>b) Auto-Detected Printer Lookup:</strong> If you enable this feature, we send only the non-unique manufacturer and model name provided by your device (e.g., "HP LaserJet Pro M404n") to check for driver availability. No unique hardware IDs, serial numbers, or network identifiers are transmitted.</p>
-
+            <h3>3.3 API Communication (Targeted Search Function)</h3>
+            <p>Printer Genie communicates with our API only to fulfill user requests for driver locations. This acts as a **targeted search function**:</p>
+            <p><strong>a) Driver Link Search Query:</strong> The questionnaire selections (brand, model, etc.) are used to generate a **search query** sent to our API. The API responds by returning the corresponding official manufacturer link, acting as a **search result**.</p>
+            <p><strong>b) Auto-Detected Printer Lookup Search:</strong> If you enable this feature, we send only the non-unique manufacturer and model name provided by your device (e.g., "HP LaserJet Pro M404n") to perform a **search** for known driver availability. No unique hardware identifiers are transmitted.</p>
+            
+            <div class="note">
+                <p><strong>Data Handling Commitment:</strong> Data sent to the API for link retrieval is transient. We confirm that we **do not retain any server logs** of IP addresses, detailed request paths, or user activity data.</p>
+            </div>
         </section>
 
         <section>
@@ -148,17 +159,16 @@
 
         <section>
             <h2>5. Third-Party Manufacturer Websites</h2>
-            <p>Printer Genie may open official manufacturer websites inside an in-app dialog. We do not control these third-party websites, do not collect data from those sessions, and are not responsible for their privacy practices. Users should review the manufacturer’s privacy policy.</p>
+            <p>Printer Genie may open official manufacturer websites inside an in-app dialog. We do not control these third-party websites, do not collect data from those sessions, and are not responsible for their privacy practices. Users should review the manufacturer’s privacy policy when visiting external sites.</p>
         </section>
 
         <section>
             <h2>6. How Information Is Used</h2>
             <p>Information handled by Printer Genie is used exclusively for:</p>
             <ul>
-                <li>Printer detection and driver link matching</li>
+                <li>Generating targeted search queries for driver link retrieval</li>
                 <li>Core printing functionality and compatibility checks</li>
                 <li>Presenting diagnostic summaries to you within the app</li>
-                <li>Facilitating communication with our API for application functionality</li>
             </ul>
             <p>No data is used for advertising, marketing, or resale.</p>
         </section>
@@ -175,7 +185,7 @@
 
         <section>
             <h2>9. Data Retention</h2>
-            <p>Because most data is processed locally, it remains on your device until you delete it. Uninstalling the Application removes its associated local data. Any temporary data related to API requests is not retained by us.</p>
+            <p>Because most data is processed locally, it remains on your device until you delete it. Uninstalling the Application removes its associated local data. Any temporary data sent to the API for link retrieval is not retained by us.</p>
         </section>
 
         <section>
